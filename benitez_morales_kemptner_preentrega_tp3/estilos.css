@@ -1,0 +1,278 @@
+/*
+estilos para la etiqueta <html> .
+*/
+html {
+  background-color:rgb(166, 113, 236);
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 25px;
+  width: 900px;
+  background-color: #525151;
+  font-family: Arial, Helvetica, sans-serif;
+  color:aliceblue
+}
+
+nav {
+  height: 55px;
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+  width: 100px;
+  height: 15px;
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(228, 228, 228);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: white;
+  background-color: grey;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+}
+
+.bold {
+	font-weight: bold;
+	color: #09C;
+}
+
+.contenedor {
+  background-color: lightsteelblue;
+}
+
+
+/* --- ABOUT  y estilos galeria --- */
+.about {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: #111;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+address {
+align-items: end;
+color: aliceblue;
+}
+
+footer a:link, a:visited {
+  color: aliceblue;
+}
+
+footer a:hover {
+  color: rgb(166, 113, 236);;
+}
+
+/* Responsivo para celulares 
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section.reverse {
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+/**************************************************************************
+Estilos para la galería
+**************************************************************************/
+
+.galeria {
+  background-color:  #525151;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+    width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+/**************************************************************************
+Estilos para el formulario de contacto.html
+**************************************************************************/
+
+/***************************** PRIMERA PARTE *****************************/
+
+/* Vamos a utilizar está línea para ir viendo como va quedando la 
+estructura del formulario. Cuando lo terminemos la eliminamos. */
+/*
+! td {
+!   outline: 1px solid red;
+! }
+*/
+
+#formulario {
+  outline: 1px solid rgb(166, 113, 236);
+  margin-top: 50px;
+  padding: 25px;
+}
+
+#formulario table {
+  border-collapse: collapse;
+  width: 100%;
+  /* para que ocupe todo el ancho del contenedor*/
+}
+
+.columna_izquierda {
+  font-size: 13px;
+  text-align: right;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.columna_derecha {
+  padding-left: 5px;
+}
+
+label {
+  /* Para poder ponerle margin, padding, width, etc. */
+  display: block;
+  font-size: 13px;
+}
+
+.label_gris {
+  font-weight: bold;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+}
+
+.interlineado {
+  line-height: 22px;
+}
+
+.bold{
+  color: aliceblue;
+}
+
+/* Estilo para todas las etiquetas input. */
+input {
+  height: 30px;
+  width: 200px;
+  color: rgb(63, 63, 63);
+  border: 0px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+#pais {
+  width: 205px;
+  height: 32px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/***************************** SEGUNDA PARTE *****************************/
+.renglon {
+  height: 20px;
+}
+
+.columna_izquierda_opciones {
+  font-size: 13px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+/* 
+Podemos separar por comas los elementos que tendrán los mismos estilos.
+*/
+#sexo_0, #sexo_1, #sexo_2, #sistema_0, #sistema_1, #sistema_2, #sistema_3 {
+	width:20px;	
+  vertical-align:middle;
+}
+
+/***************************** TERCERA PARTE *****************************/
+#comentarios {
+	width:600px;
+	height:100px;
+	border:1px;
+  padding:5px;
+  border-radius: 10px;
+  
+  /* Para evitar que se pueda cambiar el tamaño con el mouse */
+	resize:none;
+}
+
+/***************************** CUARTA PARTE ******************************/
+
+#enviar
+{
+	width: 100px;
+	border: 1px;
+	margin-top: 20px;
+	border-radius: 10px; /* Bordes redondeados */
+	margin-bottom: 10px;
+  margin-left: 300px;
+}
+
+#borrar
+{
+	width:100px;
+	border:1px;
+	background-color: rgb(176, 130, 235);
+	margin:20px;
+	border-radius: 10px; /* Border redondeados */
+}

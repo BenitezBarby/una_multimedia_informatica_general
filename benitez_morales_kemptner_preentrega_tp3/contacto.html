@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Portfolio Profesional</title>
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.grande { font-size: 60px; }
+</style>
+<script>
+// Escribir aqui el código Javascript
+</script>
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html">About</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h1>Contacto</h1>
+
+        <section>
+            <article>
+                <p class="interlineado">Para dudas o consultas, complete los datos a continuación. <br>
+                    Los campos marcados con <span class="bold">(*)</span> son obligatorios.</p>
+            </article>
+
+            <form id="formulario" action="procesar_contacto.php" method="post">
+
+                <div class="form-grid-container">
+
+                    <div class="form-group">
+                        <label for="nombre" class="label_gris">Nombre:<span class="bold"> (*)</span></label>
+                        <input type="text" name="nombre" id="nombre" maxlength="30" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido" class="label_gris">Apellido:<span class="bold"> (*)</span></label>
+                        <input type="text" name="apellido" id="apellido" maxlength="30" required="">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="label_gris">Email:<span class="bold"> (*)</span></label>
+                        <input type="email" name="email" id="email" maxlength="30" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="edad" class="label_gris">Edad:</label>
+                        <input type="number" name="edad" id="edad" max="120" min="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date" class="label_gris">Nacimiento:</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                    <div class="form-group">
+                        <label for="pais" class="label_gris">País:</label>
+                        <select name="pais" id="pais">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasil">Brasil</option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Chile">Chile</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Paraguay">Paraguay</option>
+                        </select>
+                    </div>
+
+                    <hr class="form-separator">
+
+                    <fieldset class="form-options">
+                        <legend class="label_gris">Sexo:</legend>
+                        <label><input type="radio" name="sexo" value="hombre">Hombre</label>
+                        <label><input type="radio" name="sexo" value="mujer">Mujer</label>
+                        <label><input type="radio" name="sexo" value="otre">Otre</label>
+                    </fieldset>
+
+                    <fieldset class="form-options">
+                        <legend class="label_gris">Sistema:</legend>
+                        <label><input type="checkbox" name="sistema[]" value="windows">Windows</label>
+                        <label><input type="checkbox" name="sistema[]" value="mac_os">Mac OS</label>
+                        <label><input type="checkbox" name="sistema[]" value="linux">Linux</label>
+                        <label><input type="checkbox" name="sistema[]" value="android">Android</label>
+                    </fieldset>
+
+                    <hr class="form-separator">
+
+                    <div class="form-message">
+                        <label for="comentarios" class="label_gris">Tu mensaje:</label>
+                        <textarea name="comentarios" id="comentarios" maxlength="700" placeholder="Escriba aquí su mensaje..."></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input type="submit" name="enviar" id="enviar" value="Enviar">
+                        <input type="reset" name="borrar" id="borrar" value="Borrar">
+                    </div>
+
+                </div> </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+
+    <footer>
+        <address>Diseñado por estudiantes de <a href="https://multimedia.una.edu.ar/" target="_blank">Artes
+                Multimediales</a></address>
+    </footer>
+
+
+
+</body></html>
