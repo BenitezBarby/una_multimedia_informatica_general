@@ -1,0 +1,321 @@
+html {
+  background-color:rgb(166, 113, 236);
+  margin: 0px;
+  padding: 0px;
+}
+
+#contenedor_principal {
+font-size: 3rem;
+  margin: 35px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #525151;
+  background-color: aliceblue;
+}
+
+body {
+  margin-left: 200px;
+  padding: 25px;
+  width: 900px;
+  background-color: #525151;
+  font-family: Arial, Helvetica, sans-serif;
+  color:aliceblue
+}
+
+nav {
+  position: fixed;         
+  top: 0;
+  left: 0;
+  height: 100vh;            
+  width: 180px;             
+  background-color: rgb(166, 113, 236);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+nav a {
+  display: block; 
+  width: 100%; 
+  padding: 30px 15px;
+  text-decoration: none;
+  color: rgb(166, 113, 236);
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  color: rgb(26, 26, 26);
+  background-color: rgb(110, 108, 112);
+}
+
+
+section {
+  margin: 20px;
+}
+
+.bold {
+	font-weight: bold;
+	color: #09C;
+}
+
+.contenedor {
+  background-color: lightsteelblue;
+}
+
+
+/* --- ABOUT  y estilos galeria --- */
+.about {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+  font-family: "Poppins", sans-serif;
+  color: aliceblue;
+}
+
+h2 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  color: aliceblue;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.about-img {
+  flex: 1;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+address {
+align-items: end;
+color: aliceblue;
+}
+
+footer a:link, a:visited {
+  color: aliceblue;
+}
+
+footer a:hover {
+  color: rgb(166, 113, 236);;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-section.reverse {
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
+
+
+/**************************************************************************
+Estilos para la galería
+**************************************************************************/
+
+.galeria {
+  background-color:  #525151;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: space-around;
+    width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+/**************************************************************************
+Estilos para el formulario de contacto.html
+*/
+
+#formulario {
+  outline: 1px solid rgb(166, 113, 236);
+  margin-top: 50px;
+  padding: 25px;
+}
+
+#formulario table {
+  border-collapse: collapse;
+  width: 100%;
+  /* para que ocupe todo el ancho del contenedor*/
+}
+
+.columna_izquierda {
+  font-size: 13px;
+  text-align: right;
+  height: 40px;
+  padding-left: 20px;
+}
+
+.columna_derecha {
+  padding-left: 5px;
+}
+
+label {
+  /* Para poder ponerle margin, padding, width, etc. */
+  display: block;
+  font-size: 13px;
+}
+
+.label_gris {
+  font-weight: bold;
+  width: 100px;
+  height: 20px;
+  padding: 5px;
+}
+
+.interlineado {
+  line-height: 22px;
+}
+
+.bold{
+  color: aliceblue;
+}
+
+/* Estilo para todas las etiquetas input. */
+input {
+  height: 30px;
+  width: 200px;
+  color: rgb(63, 63, 63);
+  border: 0px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+#pais {
+  width: 205px;
+  height: 32px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+/***************************** SEGUNDA PARTE *****************************/
+.renglon {
+  height: 20px;
+}
+
+.columna_izquierda_opciones {
+  font-size: 13px;
+  text-align: right;
+  padding-right: 15px;
+  font-weight: bold;
+}
+
+/* Podemos separar por comas los elementos que tendrán los mismos estilos.
+*/
+#sexo_0, #sexo_1, #sexo_2, #sistema_0, #sistema_1, #sistema_2, #sistema_3 {
+	width:20px;	
+  vertical-align:middle;
+}
+
+/***************************** TERCERA PARTE *****************************/
+#comentarios {
+	width:600px;
+	height:100px;
+	border:1px;
+  padding:5px;
+  border-radius: 10px;
+  
+  /* Para evitar que se pueda cambiar el tamaño con el mouse */
+	resize:none;
+}
+
+/***************************** CUARTA PARTE ******************************/
+
+#enviar
+{
+	width: 100px;
+	border: 1px;
+	margin-top: 20px;
+	border-radius: 10px; /* Bordes redondeados */
+	margin-bottom: 10px;
+  margin-left: 300px;
+}
+
+#borrar
+{
+	width:100px;
+	border:1px;
+	background-color: rgb(176, 130, 235);
+	margin:20px;
+	border-radius: 10px; /* Border redondeados */
+}
+
+/* =================================================== */
+/* ==== INICIO: CÓDIGO CORREGIDO PARA EL LIGHTBOX ===== */
+/* =================================================== */
+
+/* Estilos base del lightbox (cómo se ve) */
+#lightbox {
+  position: fixed; /* Se queda fijo en la pantalla */
+  z-index: 1000; /* Se pone por encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+  
+  /* Para centrar la imagen */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Clase para OCULTAR el lightbox */
+.lightbox-oculto {
+  display: none; 
+}
+
+/* Clase para MOSTRAR el lightbox */
+.lightbox-visible {
+  display: flex; 
+}
+
+/* Estilos de la imagen dentro del lightbox */
+#imagen-lightbox {
+  max-width: 80%;
+  max-height: 80%;
+  border: 3px solid white;
+}
+
+/* Estilos del botón de cerrar */
+.cerrar-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}

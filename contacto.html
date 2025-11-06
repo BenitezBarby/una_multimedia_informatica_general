@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <script src="funciones.js"></script>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  
+  <div id="contenedor_principal"> <h1>Contacto</h1>
+  </div>
+    <section>
+    <article>      
+      <p class="interlineado">Para dudas o consultas, complete los datos a continuación. <br>
+        Los campos marcados con <span class="bold">(*)</span> son obligatorios.</p>
+    </article>
+    <form id="formulario" novalidate>
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="columna_izquierda"><label for="nombre" class="label_gris">Nombre: </label></td>
+          <td class="columna_derecha"><input type="text" name="nombre" id="nombre" maxlength="30" required><span class="bold"> (*)</span></td>
+          <td class="columna_izquierda"><label for="apellido" class="label_gris">Apellido: </label></td>
+          <td class="columna_derecha"><input type="text" name="apellido" id="apellido" maxlength="30" required><span class="bold"> (*)</span></td>
+        </tr>
+        <tr>
+          <td class="columna_izquierda"><label for="email" class="label_gris">Email: </label></td>
+          <td class="columna_derecha"><input type="email" name="email" id="email" maxlength="30" required><span class="bold"> (*)</span></td>
+          <td class="columna_izquierda"><label for="edad" class="label_gris">Edad:</label></td>
+          <td class="columna_derecha"><input type="number" name="edad" id="edad" max="120" min="0"></td>
+        </tr>
+        <tr>
+          <td class="columna_izquierda"><label for="date" class="label_gris"> Nacimiento:</label></td>
+          <td class="columna_derecha"><input type="date" name="date" id="date"></td>
+          <td class="columna_izquierda"><label for="pais" class="label_gris">País:</label></td>
+          <td class="columna_derecha">
+            <select name="pais" id="pais">
+              <option>Argentina</option>
+              <option>Brasil</option>
+              <option>Uruguay</option>
+              <option>Chile</option>
+              <option>Peru</option>
+              <option>Paraguay</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td colspan="4" class="renglon"></td></tr>
+        <tr>
+          <td class="columna_izquierda_opciones">Sexo:</td>
+          <td>
+            <label><input type="radio" name="sexo" value="hombre">Hombre</label>
+            <label><input type="radio" name="sexo" value="mujer">Mujer</label>
+            <label><input type="radio" name="sexo" value="otre">Otre</label>
+          </td>
+          <td class="columna_izquierda_opciones">Sistema:</td>
+          <td>
+            <label><input type="checkbox" name="sistema" value="windows">Windows</label>
+            <label><input type="checkbox" name="sistema" value="mac_os">Mac OS</label>
+            <label><input type="checkbox" name="sistema" value="linux">Linux</label>
+            <label><input type="checkbox" name="sistema" value="android">Android</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+          </td>
+        </tr>
+      </table>
+    </form>
+  </section>
+  <footer>
+    <address>Diseñado por estudiantes de <a href="https://multimedia.una.edu.ar/" target="_blank">Artes Multimediales</a></address>
+  </footer>
+</body>
+</html>
